@@ -536,8 +536,8 @@ function SortableTodoCard({
       style={style}
       {...attributes}
       {...listeners}
-      className={`flex flex-col gap-4 rounded-3xl border border-transparent bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${
-        isDragging ? "opacity-70 ring-2 ring-[#5570ff]" : ""
+      className={`flex flex-col gap-4 rounded-3xl border border-transparent bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg hover:cursor-grab ${
+        isDragging ? "opacity-70 ring-2 ring-[#5570ff] !cursor-grabbing" : ""
       }`}
     >
       <div className="flex items-start justify-between gap-4">
